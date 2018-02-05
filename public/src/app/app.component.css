@@ -1,0 +1,41 @@
+.header {
+    background-image: url('/assets/MPC1.jpg');
+    background-size: cover;
+    height: 214px;
+    width: auto;
+    text-align: center;
+    padding: 2%;
+}
+
+.logout-link{
+  display: block;
+  color: white;
+  text-align: right;
+}
+footer{
+  background: none;
+  color: black;
+}
+li{
+  display: inline-block;
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+.container {
+margin: 0 auto;
+max-width: 2000px;
+width: 90%;
+}
+
+h2{
+  font-family: 'Shadows Into Light', cursive;
+  display: inline-block;
+  color: white;
+  font-size: 5.56rem;
+  margin-top: 5%;
+}

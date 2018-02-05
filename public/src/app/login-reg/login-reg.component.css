@@ -1,0 +1,23 @@
+.registrationForm {
+    width: 400px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.loginForm {
+    width: 400px;
+    margin-top: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mat-grid-tile .mat-figure{
+    align-items: flex-start !important;
+}
+
+div.grid-example.col.s12.m6 {
+    margin-top: 20px;
+}
+mat-card {
+    -webkit-background-composite: grey;
+}
+

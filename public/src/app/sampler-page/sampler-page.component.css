@@ -1,0 +1,20 @@
+.sampler-info{
+    padding: 25px;
+}
+img{
+    width: 50%;
+    border: #E7E7E7 solid 5px;
+    border-radius: 3px;
+}
+
+.card{
+    width: 50%;
+    margin-top: 4%;
+    margin-left: 25%;
+}
+.back-button{
+    font-size: 19px;
+}
+.body-container{
+    padding: 23px;
+}

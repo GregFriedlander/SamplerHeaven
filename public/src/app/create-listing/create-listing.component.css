@@ -1,0 +1,10 @@
+.row-cont{
+    display: flex;
+    justify-content: center;
+}
+div.row.row-w{
+    width: 80%;
+}
+h4{
+    display:inline-block;
+}

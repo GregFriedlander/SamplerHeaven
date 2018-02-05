@@ -1,0 +1,117 @@
+<app-navigation></app-navigation>
+
+<div class="browse-container">
+
+    <div class="row ">
+        <div class="col s12 m6">
+            <h4>Browse Samplers</h4>
+        </div>
+        <div class="col s12 m6 search-col">
+            <div class="input-field">
+                <input id="search" type="search" name=search [(ngModel)]="searchTerm" (keyup)="searchListings(searchTerm)" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i> 
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="browse-body">
+
+        <div class="row">
+
+            <div class="col s12 m2">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">Sort By..</div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header sort-header">Brands</div>
+                        <div class="collapsible-body" (click)="searchListings('akai')">Akai</div>
+                        <div class="collapsible-body"(click)="searchListings('roland')">Roland</div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header sort-header">Price</div>
+                        <div class="collapsible-body"><a href="#">Akai</a></div>
+                        <div class="collapsible-body"><a href="#">Roland</a></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header sort-header">Condition</div>
+                        <div class="collapsible-body"><a href="#">Working</a></div>
+                        <div class="collapsible-body"><a href="#">Needs Love</a></div>
+                        <div class="collapsible-body"><a href="#">Parts</a></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col s12 m10">
+                
+                    <div class="col s12 m3" *ngFor="let sampler of shownSamplers">
+                        <a class="nav-link" [routerLink]="['/sampler', sampler._id]">
+                            <div class="card hoverable">
+                                <div class="card">
+                                    <div class="card-image">
+                                    <img src={{sampler.image}} alt="picture of a sampler">
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="brandHeader">{{ sampler.brand }}</p>
+                                        <p class="modelHeader">{{ sampler.model }} </p>
+                                        <p class="right-align">${{ sampler.price }}</p>
+                                    </div>
+                                </div>
+                            </div>   
+                        </a>     
+                    </div>
+                
+            </div>
+
+        </div>
+
+        <!-- <div class="filterTable hide-on-1042-and-down show-on-large">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">Sort By..</div>
+                </li>
+                <li>
+                    <div class="collapsible-header sort-header">Brands</div>
+                    <div class="collapsible-body" (click)="searchListings('akai')">Akai</div>
+                    <div class="collapsible-body"(click)="searchListings('roland')">Roland</div>
+                </li>
+                <li>
+                    <div class="collapsible-header sort-header">Price</div>
+                    <div class="collapsible-body"><a href="#">Akai</a></div>
+                    <div class="collapsible-body"><a href="#">Roland</a></div>
+                </li>
+                <li>
+                    <div class="collapsible-header sort-header">Condition</div>
+                    <div class="collapsible-body"><a href="#">Working</a></div>
+                    <div class="collapsible-body"><a href="#">Needs Love</a></div>
+                    <div class="collapsible-body"><a href="#">Parts</a></div>
+                </li>
+            </ul>
+        </div> -->
+
+        <!-- <div class="browseList">
+            <div class="row" >
+                <div class="col s12 m6 l3" *ngFor="let sampler of shownSamplers">
+                    <a class="nav-link" [routerLink]="['/sampler', sampler._id]">
+                    <mat-card class="browseCard">
+                        <img mat-card-image src={{sampler.image}} alt="picture of a sampler">
+                        <mat-card-content>
+                            <h5 class="brandHeader">{{ sampler.brand }}</h5>
+                            <h5 class="modelHeader">{{ sampler.model }} </h5>
+                            <h6>${{ sampler.price }}</h6>
+                        </mat-card-content>
+                    </mat-card>   
+                    </a>     
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+</div>
+
+
+<!-- <a *ngIf="sampler._user == currentUser._id" [routerLink]="['/edit', sampler._id]" >Edit Listing</a> -->

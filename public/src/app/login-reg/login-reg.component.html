@@ -1,0 +1,71 @@
+<div class="container">
+  
+  <!-- <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a> -->
+
+
+  <div class="row">
+    <div class="grid-example col s12 m6">
+      <mat-card>
+            <h3>Register Here: </h3>
+            <form (submit)="register()">
+              <table>
+                <tr> 
+                  <td>First Name:</td>
+                  <td><input type="text" name="first_name" [(ngModel)]="newUser.first_name" #firstname="ngModel"></td>
+                </tr>
+                <tr>
+                  <td>Last Name:</td> 
+                  <td><input type="text" name="last_name" [(ngModel)]="newUser.last_name" #lastname="ngModel"></td>
+                </tr>
+                <tr>
+                  <td>Email: </td>
+                  <td><input type="text" name="email" [(ngModel)]="newUser.email" #email="ngModel"></td>
+                </tr> 
+                <tr> 
+                  <td>Password: </td>
+                  <td><input type="password" name="password" [(ngModel)]="newUser.password" #password="ngModel"></td>
+                </tr>
+                <tr>
+                  <td>Confirm Password:</td>
+                  <td><input type="password" name="password" [(ngModel)]="newUser.passwordConfirm" #passwordConfirm="ngModel"></td>
+                </tr>
+                <tr>
+                  <td>State:</td>
+                  <td>
+                    <select name="state" [(ngModel)]="newUser.state" #city="ngModel">
+                      <option  *ngFor="let state of states" >{{ state }}</option>
+                    </select> 
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><input type="submit" value="Register Here!"></td>
+                </tr>
+              </table>
+            </form>
+      </mat-card>
+    </div>
+
+    <div class="grid-example col s12 m6">
+      <mat-card>
+            <h3>Login Here</h3>
+            <form (submit)="login()">
+              <table>
+                <tr>
+                  <td>Email:</td>
+                  <td><input type="text" name="email" [(ngModel)]="user.email" #email="ngModel"></td>
+                </tr>
+                <tr>
+                  <td>Password:</td>
+                  <td><input type="password" name="password" [(ngModel)]="user.password" #password="ngModel"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><input type="submit" value="Login Here"></td>
+                </tr>
+              </table>
+            </form> 
+      </mat-card>
+    </div>
+  </div>
+</div>

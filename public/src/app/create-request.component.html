@@ -1,0 +1,43 @@
+<a [routerLink]="['/home']">Browse</a>
+<a [routerLink]="['/create','listing']">Create Listing</a>
+<a [routerLink]="['/requests']">Requests</a>
+<a [routerLink]="['/requests','new']">Create Request</a>
+
+<h4>Add a Request</h4>
+
+<form (submit)="addRequest()">
+  <table>
+    <tr>
+      <td>Brand:</td>
+      <td><input type="text" name="brand" [(ngModel)]="newRequest.brand" #brand="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Model:</td>
+      <td><input type="text" name="model" [(ngModel)]="newRequest.model" #model="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Condition:</td>
+      <td>
+          <select name="condition" [(ngModel)]="newRequest.condition" #condition="ngModel">
+            <option value="Working">Working</option>
+            <option value="Needs Love">Needs Love</option>
+            <option value="Parts">Parts</option>
+          </select>
+    </tr>
+    <tr>
+      <td>Details:</td>
+      <td><input type="text" name="details" [(ngModel)]="newRequest.details" #details="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Min Price:</td>
+      <td><input type="text" name="minPrice" [(ngModel)]="newRequest.minPrice" #minPrice="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Max Price:</td>
+      <td><input type="text" name="maxPrice" [(ngModel)]="newRequest.maxPrice" #maxPrice="ngModel"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Add Request"></td>
+    </tr>
+  </table>
+</form>

@@ -1,0 +1,36 @@
+
+.nav-wrapper {
+    text-align: center !important;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.hide-on-med-and-down li a {
+    width: 135px;
+}
+a.dropdown-button{
+    margin-right: 5%;
+}
+.nav-wrapper ul li{
+    /* display: inline-block; */
+    text-align: center !important;
+    /* margin-left: 50%; */
+}
+#nav-ul li {
+    /* margin-left: 40%; */
+    text-align: center !important;
+}
+.brand-logo a {
+    /* margin-left: 48px; */
+}
+/* nav .brand-logo.center{
+    left: 48% !important;
+} */
+ul{
+    /* width: 40%; */
+    text-align: center !important;
+}
+
+div#cdk-overlay-0.cdk-overlay-pane{
+    margin-top: -1300px !important;
+}

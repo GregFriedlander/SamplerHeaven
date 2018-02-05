@@ -1,0 +1,55 @@
+
+
+<!-- <nav [ngStyle]="{'background': 'black'}" class="navbar navbar-expand-sm navbar-light bg-light">
+
+  <button mat-button [matMenuTriggerFor]="postedSamplers">Samplers</button>
+
+  <mat-menu #postedSamplers="matMenu" xPositio="right" yPosition="above">
+    <button mat-menu-item><a class="nav-link" [routerLink]="['/home']">Browse</a></button>
+    <button mat-menu-item><a class="nav-link" [routerLink]="['/create','listing']">Create Listing</a></button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="postedRequests">Requests</button>
+
+  <mat-menu #postedRequests="matMenu" yPosition="above">
+          <button mat-menu-item><a class="nav-link" [routerLink]="['/requests']">Requests</a></button>
+          <button mat-menu-item><a class="nav-link" [routerLink]="['/requests','new']">Create Request</a></button>
+  </mat-menu>
+
+  <button mat-button class="mat-button">About</button>
+  <button mat-button class="mat-button">Contact</button>
+
+</nav> -->
+
+<ul materialize="dropdown" id="dropdown1" class="dropdown-content">
+    <li><a [routerLink]="['/home']">Browse</a></li>
+    <li class="divider"></li>
+    <li><a [routerLink]="['/create','listing']">Create Listing</a></li>
+</ul>
+<ul materialize="dropdown" id="dropdown2" class="dropdown-content">
+    <li><a [routerLink]="['/requests']">Requests</a></li>
+    <li class="divider"></li>
+    <li><a [routerLink]="['/requests','new']">Create Request</a></li>
+</ul>
+
+<nav>
+    <div class="nav-wrapper">
+      <!-- <a href="#!" class="show-on-small brand-logo ">Sampler Heaver</a> -->
+      <a data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a class="dropdown-button"  data-activates="dropdown1">Samplers<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button"  data-activates="dropdown2">Requests<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a  href="collapsible.html">About</a></li>
+        <li><a  href="mobile.html">Contact</a></li>
+      </ul>
+      <ul materialize="sideNav" class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Samplers</a></li>
+        <li><a href="badges.html">Requests</a></li>
+        <li><a href="collapsible.html">About</a></li>
+        <li><a href="mobile.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+

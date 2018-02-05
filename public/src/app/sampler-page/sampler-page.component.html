@@ -1,0 +1,29 @@
+<app-navigation></app-navigation>
+
+<!-- <div class="sampler-info">
+  <img src={{thisSampler.image}} alt="">
+
+</div> -->
+
+<div class="body-container">
+  <a class="back-button" [routerLink]="['/home']"> <<<Back </a>
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src={{thisSampler.image}}>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{thisSampler.brand}}<i class="material-icons right">more_vert</i></span>
+              <p>{{thisSampler.model}}</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">{{thisSampler.brand}}<i class="material-icons right">close</i></span>
+              <span class="card-title grey-text text-darken-4" [ngStyle]="{'margin-bottom': '55px'}">{{thisSampler.model}}</span>
+              <p>Location: {{thisSampler.location}}</p>
+              <p>Condition: {{thisSampler.condition}}</p>
+              <p>Price: ${{thisSampler.price}}</p>
+              <br>
+              <p>{{thisSampler.details}}</p>
+            </div>
+        </div>
+</div>
+

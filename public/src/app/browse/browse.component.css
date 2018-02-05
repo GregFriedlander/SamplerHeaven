@@ -1,0 +1,175 @@
+.browse-container{
+    width: 100%;
+}
+.browse_header {
+    padding-top: 1%;
+}
+#search{
+    background-color: black;
+}
+.w-100{
+    width: 100%;
+}
+h4{
+    font-family: 'Shadows Into Light', cursive;
+    display: inline-block;
+    font-weight: bold;
+    color: black;
+    margin-left: 6%;
+    margin-top: 8%; 
+    font-size: 3.48rem;
+}
+.browse-body{
+    width: 100%;
+}
+div.collapsible-body{
+    padding: 0.5rem;
+    text-align: right;
+}
+.vert-top{
+    vertical-align: top;
+}
+.card{
+    height: 238px;
+}
+.card .card-image img{
+    height: 141px;
+}
+.nav-link{
+    color: black
+}
+.search-col{
+    display: inline-grid;
+    justify-content: right;
+    margin-top: 4%;
+    margin-bottom: -2%
+}
+
+
+/* .filterTable{
+    width: 20%;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+} 
+ul.collapsible{
+    margin-top: 0px;
+}
+.browseList{
+    width: 79%;
+    display: inline-block;
+    margin-left: 0.6%;
+    padding: 5px;
+}
+.browseCard {
+    height: 265px;
+    background-color: whitesmoke;
+    margin-bottom: 13px;
+}
+.mat-card-image{
+    height: 70%;
+}
+h5{
+    font-size: 1.00em;
+    font-weight: bold;
+}
+.modelHeader{
+    text-align: right;
+}
+.listingDiv {
+    border: 1px solid black;
+}
+a{
+    color: black;
+}
+
+
+
+@media (max-width: 600px){
+    .mat-card{
+        margin-bottom: 5px;
+    }
+}
+.mat-card{
+    margin-bottom: 20px;
+}
+
+.mat-button{
+    background-color: brown;
+    margin-left: 5px;
+}
+nav {
+    text-align: left !important;
+}
+h6{
+    text-align: right;
+} */
+
+
+
+
+
+/* .row{
+    display: inline-flex;
+} */
+
+
+
+
+
+
+/* @media only screen and (min-width:1000px){
+    input.searchbar{
+        display: inline-block;
+        z-index: 1;
+        margin-left: 367px;
+        vertical-align: bottom;
+        margin-bottom: -44px;
+        width: 293px;
+        background-color: black;
+        padding-left: 25px;
+        color: white;
+        border-radius: 17px;
+    }
+    .filterTable{
+        width: 16%;
+        height: 300px;
+        border: 1px solid black;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    input.searchbar{
+        display: inline-block;
+        z-index: 1;
+        margin-left: 133px;
+        vertical-align: bottom;
+        margin-bottom: -44px;
+        width: 293px;
+        background-color: black;
+        padding-left: 25px;
+        color: white;
+        border-radius: 17px;
+    }
+    .filterTable{
+        display: none;
+    }
+} */
+
+
+
+/* @media only screen and (min-width: 993px) {
+    .show-on-large {
+      display: inline-block !important;
+    }
+  } */
+
+  /* @media only screen and (max-width: 1542px) {
+    .hide-on-1042-and-down {
+      display: none !important;
+    }
+  } */
+
+

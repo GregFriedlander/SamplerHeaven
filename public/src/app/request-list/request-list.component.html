@@ -1,0 +1,16 @@
+<a [routerLink]="['/home']">Browse</a>
+<a [routerLink]="['/create','listing']">Create Listing</a>
+<a [routerLink]="['/requests']">Requests</a>
+<a [routerLink]="['/requests','new']">Create Request</a>
+
+<h4>Hit The Request Page {{currentUser.first_name}}</h4>
+
+<div class="requestListDiv" *ngFor="let request of allRequests">
+    <p>Brand: {{ request.brand }}</p>
+    <p>Model: {{ request.model }}</p>
+    <p>Condition: {{ request.condition }}</p>
+    <p>MinPrice: {{ request.minPrice }}</p>
+    <p>MaxPrice: {{ request.maxPrice }}</p>
+    <!-- <button *ngIf="currentUser._id == request._user" (click)="deleteRequest(request._id)">Delete Request</button> -->
+    <button *ngIf="currentUser._id == request._user" [routerLink]="['/requests','edit', request._id]">Edit Request</button>
+</div>

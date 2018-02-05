@@ -1,0 +1,14 @@
+body {
+    /* background-color: antiquewhite; */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.56) 0%,rgba(255,255,255,0) 100%);
+    background-repeat: none;
+}
+
+div#cdk-overlay-0.cdk-overlay-pane{
+    margin-top: -1267px !important;
+    margin-left: 78px !important;
+}
+div#cdk-overlay-1.cdk-overlay-pane{
+    margin-top: -1267px !important;
+    margin-left: 78px !important;
+}

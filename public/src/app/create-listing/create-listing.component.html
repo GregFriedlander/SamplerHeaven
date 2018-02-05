@@ -1,0 +1,92 @@
+<app-navigation></app-navigation>
+
+<h4>CreateListing</h4>
+
+<div class="row-cont">
+  <div class="row row-w">
+    <form (submit)="addListing()" class="col s12">
+      <div class="row">
+        <div class="input-field col m6 s12">
+            <input type="text" name="brand" id="brand" class="validate" [(ngModel)]="newSampler.brand" #brand="ngModel">
+            <label for="brand">Brand</label>
+        </div>
+        <div class="input-field col m6 s12">
+            <input type="text" name="model" id="model" class="validate" [(ngModel)]="newSampler.model" #model="ngModel">
+            <label for="model">Model</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+            <select materialize="material_select" name="condition" [(ngModel)]="newSampler.condition" #condition="ngModel">
+                <option value="" disabled selected>Condition</option>
+                <option value="Working">Working</option>
+                <option value="Needs Love">Needs Love</option>
+                <option value="Parts">Parts</option>
+              </select>
+        </div>
+        <div class="input-field col s6">
+            <i class="material-icons prefix">monetization_on</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Price</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" type="text" name="details" [(ngModel)]="newSampler.details" #details="ngModel"></textarea>
+            <label for="textarea1">Details</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <input id="image" type="text" name="image" [(ngModel)]="newSampler.image" #image="ngModel" class="validate">
+            <label for="image">Image URL</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <button class="btn waves-effect waves-light"type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- <form (submit)="addListing()">
+  <table>
+    <tr>
+      <td>Brand:</td>
+      <td><input type="text" name="brand" [(ngModel)]="newSampler.brand" #brand="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Model:</td>
+      <td><input type="text" name="model" [(ngModel)]="newSampler.model" #model="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Condition:</td>
+      <td>
+        <select class="browser-default" name="condition" [(ngModel)]="newSampler.condition" #condition="ngModel">
+          <option value="Working">Working</option>
+          <option value="Needs Love">Needs Love</option>
+          <option value="Parts">Parts</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td><input type="text" name="price" [(ngModel)]="newSampler.price" #price="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Details:</td>
+      <td><input type="text" name="details" [(ngModel)]="newSampler.details" #details="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Image:</td>
+      <td><input type="text" name="image" [(ngModel)]="newSampler.image" #image="ngModel"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Add Sampler"></td>
+    </tr>
+  </table>
+</form> -->

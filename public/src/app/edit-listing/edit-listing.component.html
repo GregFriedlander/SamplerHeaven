@@ -1,0 +1,41 @@
+<h4>Edit Sampler Information</h4>
+
+<form (submit)="updateSamplerInfo(updateSampler._id)">
+  <table>
+    <tr>
+      <td>Brand:</td>
+      <td><input type="text" name="brand"  [(ngModel)]="updateSampler.brand" #brand="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Model:</td>
+      <td><input type="text" name="model"  [(ngModel)]="updateSampler.model" #model="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Condition:</td>
+      <td>
+        <select name="condition"  [(ngModel)]="updateSampler.condition" #condition="ngModel">
+          <option value="Working">Working</option>
+          <option value="Needs Love">Needs Love</option>
+          <option value="Parts">Parts</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td><input type="text" name="price"  [(ngModel)]="updateSampler.price" #price="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Details:</td>
+      <td><input type="text" name="details"  [(ngModel)]="updateSampler.details" #details="ngModel"></td>
+    </tr>
+    <tr>
+      <td>Image:</td>
+      <td><input type="text" name="image"  [(ngModel)]="updateSampler.image" #image="ngModel"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Update Sampler"></td>
+    </tr>
+  </table>
+</form>
+
+<button (click)="deleteSampler(updateSampler._id)">Delete Sampler</button>
