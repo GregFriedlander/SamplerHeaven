@@ -1,11 +1,9 @@
 .browse-container{
-    width: 100%;
+    background-color: ghostwhite;
+    margin-top: 0.2%;     
 }
 .browse_header {
     padding-top: 1%;
-}
-#search{
-    background-color: black;
 }
 .w-100{
     width: 100%;
@@ -15,9 +13,9 @@ h4{
     display: inline-block;
     font-weight: bold;
     color: black;
-    margin-left: 6%;
-    margin-top: 8%; 
-    font-size: 3.48rem;
+    margin-left: 44px;
+    margin-top: 45px;
+    font-size: 6rem;
 }
 .browse-body{
     width: 100%;
@@ -29,9 +27,7 @@ div.collapsible-body{
 .vert-top{
     vertical-align: top;
 }
-.card{
-    height: 238px;
-}
+
 .card .card-image img{
     height: 141px;
 }
@@ -39,12 +35,85 @@ div.collapsible-body{
     color: black
 }
 .search-col{
-    display: inline-grid;
-    justify-content: right;
-    margin-top: 4%;
-    margin-bottom: -2%
+    margin-top: 5%;
+}
+.input-field input[type=search]{
+    font-size: 1.5rem;
+}
+.input-field input[type=search]:focus{
+    background-color: ghostwhite;
+}
+.material-icons{
+    font-size: 35px;
+    margin-left: -55px;
 }
 
+/* !!!!!!!! SORT BY !!!!!!!!!  */
+
+.no-display{
+    display: none;
+}
+.category{
+    margin-left: 58px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-top: 7px;
+    color: #54502e;
+}
+.searchCat a {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 25px;
+}
+.searchCat a:hover{
+    cursor: pointer;
+}
+h3{
+    margin-left: 6px;
+    border-bottom: 2.3px dotted;
+    padding-bottom: 4%;
+}
+
+/* !!!!!!!! LISTINGS !!!!!!!!!! */
+
+.listings{
+    background-color: #5d222287;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+.listing{
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+}
+
+.card{
+    height: 264px;
+    background-color: navajowhite;
+    border: solid 1.3px navajowhite;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+.card-content{
+    padding: 12px;
+}
+.modelHeader{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 16px;
+    padding-top: 6px;
+    text-align: center;
+}
+.brandHeader{
+    display: inline-block;
+    font-size: 117%;
+}
+.priceHeader{
+    float: right;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
 
 /* .filterTable{
     width: 20%;

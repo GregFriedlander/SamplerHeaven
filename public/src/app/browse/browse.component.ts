@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SamplerService } from './../sampler.service';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { MaterializeModule } from 'angular2-materialize';
-import { BrowseDialogComponent } from '../browse-dialog/browse-dialog.component';
+// import { BrowseDialogComponent } from '../browse-dialog/browse-dialog.component';
 
 @Component({
   selector: 'app-browse',
@@ -16,8 +15,11 @@ export class BrowseComponent implements OnInit {
   shownSamplers: any = [{}];
   searchTerm: string = '';  
   // selectedSampler: any = {};
+  switch: boolean = true;
+  switch2: boolean = true;
+  switch3: boolean = true;
 
-  constructor(private _samplerService: SamplerService, public dialog: MatDialog) { }
+  constructor(private _samplerService: SamplerService) { }
 
   ngOnInit() {
     this._samplerService.getSamplers()
@@ -40,8 +42,33 @@ export class BrowseComponent implements OnInit {
     })
   }
 
- 
-
+  toggleBrands(){
+    if(this.switch == false){
+      this.switch = true;
+    }else if(this.switch == true){
+      this.switch = false;
+      this.switch2 = true;
+      this.switch3 = true;
+    }
+  }
+  togglePrices(){
+    if(this.switch2 == false){
+      this.switch2 = true;
+    }else if(this.switch2 == true){
+      this.switch2 = false;
+      this.switch = true;
+      this.switch3 = true;
+    }
+  }
+  toggleCondition(){
+    if(this.switch3 == false){
+      this.switch3 = true;
+    }else if(this.switch3 == true){
+      this.switch3 = false;
+      this.switch = true;
+      this.switch2 = true;
+    }
+  }
   // openDialog(samplerID){
   //   this._samplerService.getSingleSampler(samplerID)
   //   .subscribe((sampler:any)=>{
