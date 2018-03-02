@@ -1,6 +1,10 @@
 .browse-container{
-    background-color: ghostwhite;
+    /* background-color: ghostwhite; */
     margin-top: 0.2%;     
+    background-image: url('/assets/back1.png');
+    /* min-height: 800px; */
+    background-attachment: fixed;
+    background-size: cover;
 }
 .browse_header {
     padding-top: 1%;
@@ -42,6 +46,9 @@ div.collapsible-body{
 }
 .input-field input[type=search]:focus{
     background-color: ghostwhite;
+}
+.input-field[_ngcontent-c1] input[type=search][_ngcontent-c1]:focus{
+    background-color: #f8f8ff00;
 }
 .material-icons{
     font-size: 35px;

@@ -1,41 +1,112 @@
-<h4>Edit Sampler Information</h4>
+<app-navigation></app-navigation>
 
-<form (submit)="updateSamplerInfo(updateSampler._id)">
-  <table>
-    <tr>
-      <td>Brand:</td>
-      <td><input type="text" name="brand"  [(ngModel)]="updateSampler.brand" #brand="ngModel"></td>
-    </tr>
-    <tr>
-      <td>Model:</td>
-      <td><input type="text" name="model"  [(ngModel)]="updateSampler.model" #model="ngModel"></td>
-    </tr>
-    <tr>
-      <td>Condition:</td>
-      <td>
-        <select name="condition"  [(ngModel)]="updateSampler.condition" #condition="ngModel">
-          <option value="Working">Working</option>
-          <option value="Needs Love">Needs Love</option>
-          <option value="Parts">Parts</option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td>Price:</td>
-      <td><input type="text" name="price"  [(ngModel)]="updateSampler.price" #price="ngModel"></td>
-    </tr>
-    <tr>
-      <td>Details:</td>
-      <td><input type="text" name="details"  [(ngModel)]="updateSampler.details" #details="ngModel"></td>
-    </tr>
-    <tr>
-      <td>Image:</td>
-      <td><input type="text" name="image"  [(ngModel)]="updateSampler.image" #image="ngModel"></td>
-    </tr>
-    <tr>
-      <td><input type="submit" value="Update Sampler"></td>
-    </tr>
-  </table>
-</form>
+<div class="create-body">
 
-<button (click)="deleteSampler(updateSampler._id)">Delete Sampler</button>
+  <div class="row">
+    <div class="col s12">
+        <h4>Edit Details</h4>
+    </div>
+  </div>
+
+  <!-- FORM FROM CREATE LISTING -->
+
+  <div class="row form-row">
+
+      <div class="col s12 m8 offset-m2 form-area">
+  
+        <form (submit)="updateSamplerInfo(updateSampler._id)">
+          <div class="row">
+            <div class="input-field col m6 s12">
+                <input class="input-style" type="text" name="brand" id="brand" class="validate" [(ngModel)]="updateSampler.brand" #brand="ngModel">
+                <label for="brand">Brand</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <input type="text" name="model" id="model" class="validate" [(ngModel)]="updateSampler.model" #model="ngModel">
+                <label for="model">Model</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+                <select class="condition" materialize="material_select" name="condition" [(ngModel)]="updateSampler.condition" #condition="ngModel">
+                    <option class="condition" value="" disabled selected>Condition</option>
+                    <option value="Working">Working</option>
+                    <option value="Needs Love">Needs Love</option>
+                    <option value="Parts">Parts</option>
+                  </select>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">monetization_on</i>
+                <input name="price"  [(ngModel)]="updateSampler.price" #price="ngModel" id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Price</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea" type="text" name="details" [(ngModel)]="updateSampler.details" #details="ngModel"></textarea>
+                <label for="textarea1">Details</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+                <input id="image" type="text" name="image" [(ngModel)]="updateSampler.image" #image="ngModel" class="validate">
+                <label for="image">Image URL</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <button class="btn waves-effect waves-light"type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+  
+      </div>
+  
+    </div>
+
+  <!-- ORIGINAL UPDATE FORM -->
+
+  <!-- <form (submit)="updateSamplerInfo(updateSampler._id)">
+    <table>
+      <tr>
+        <td>Brand:</td>
+        <td><input type="text" name="brand"  [(ngModel)]="updateSampler.brand" #brand="ngModel"></td>
+      </tr>
+      <tr>
+        <td>Model:</td>
+        <td><input type="text" name="model"  [(ngModel)]="updateSampler.model" #model="ngModel"></td>
+      </tr>
+      <tr>
+        <td>Condition:</td>
+        <td>
+          <select name="condition"  [(ngModel)]="updateSampler.condition" #condition="ngModel">
+            <option value="Working">Working</option>
+            <option value="Needs Love">Needs Love</option>
+            <option value="Parts">Parts</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Price:</td>
+        <td><input type="text" name="price"  [(ngModel)]="updateSampler.price" #price="ngModel"></td>
+      </tr>
+      <tr>
+        <td>Details:</td>
+        <td><input type="text" name="details"  [(ngModel)]="updateSampler.details" #details="ngModel"></td>
+      </tr>
+      <tr>
+        <td>Image:</td>
+        <td><input type="text" name="image"  [(ngModel)]="updateSampler.image" #image="ngModel"></td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Update Sampler"></td>
+      </tr>
+    </table>
+  </form> -->
+  
+  <button (click)="deleteSampler(updateSampler._id)">Delete Sampler</button>
+  
+
+</div>
+

@@ -1,20 +1,131 @@
-.sampler-info{
-    padding: 25px;
-}
-img{
-    width: 50%;
-    border: #E7E7E7 solid 5px;
-    border-radius: 3px;
-}
-
-.card{
-    width: 50%;
-    margin-top: 4%;
-    margin-left: 25%;
+.body-div{
+    padding: 23px;
+    background-image: url('/assets/MPC2.jpg');
+    min-height: 800px;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .back-button{
     font-size: 19px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    color: ghostwhite;
+    margin-left: 44px;
+    margin-top: 45px;
+    font-size: 2.9rem;
+    text-align: left;
 }
-.body-container{
-    padding: 23px;
+
+/* !!!!!!!! CARD !!!!!!!!!!!!!!!! */
+
+.card{
+    margin-top: 4%;
 }
+.card-content{
+    background-color: navajowhite;
+    padding-bottom: 65px;
+}
+.card-content:hover{
+    cursor: pointer;
+}
+img{
+    width: 50%;
+    border: #656262 solid 3px;
+    border-radius: 3px;
+}
+.sampler-info{
+    padding: 25px;
+}
+.sampler-model{
+    /* display: inline-block; */
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+.sampler-model:hover{
+    cursor: pointer;
+}
+.sampler-brand{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 2.6rem;
+    float: right;
+}
+.sampler-brand:hover{
+    cursor: pointer;
+}
+i.medium{
+    font-size: 2.9rem;
+    color: dimgray;
+}
+
+/* !!!!!!!! CARD END !!!!!!!!!!!!!!!! */
+
+
+/* !!!!!!!!!!!!! CARD REVEAL !!!!!!!!!!!!!!! */
+
+.card-reveal{
+    background-color: #353434;
+    padding: 35px;
+    
+}
+.card .card-reveal{
+    border: 2px solid ghostwhite;
+}
+.back-img{
+    border: none;
+    width: 100% !important; 
+}
+.card-reveal i{
+    margin-top: -15px;
+    font-size: 2.4rem;
+    color: ghostwhite;
+    font-weight: 400;
+}
+.back-model{
+    vertical-align: top;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: navajowhite;
+    margin-bottom: 15px;
+}
+.back-brand{
+    vertical-align: top;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    color: navajowhite;
+    margin-bottom: 15px;
+}
+.desc-row{
+    background-color: #f8f8ff2b;
+    height: 33%;
+    border-radius: 27px;
+    padding-left: 18px;
+}
+.back-price{
+    text-align: right;
+    margin-right: 30px;
+    font-size: 1.6rem;
+}
+.back-location{
+    text-align: right;
+    margin-right: 30px;
+    font-size: 1.1rem;
+}
+.back-condition{
+    margin-right: 46px;
+    font-weight: bold;
+}
+.back-details{
+    font-size: 1.2rem;
+    margin-top: 30px;
+    font-weight: 400;
+    font-style: italic;
+    color: navajowhite;
+}
+/* !!!!!!!!!!!!! CARD REVEAL  END !!!!!!!!!!!!!!! */
+
+
+

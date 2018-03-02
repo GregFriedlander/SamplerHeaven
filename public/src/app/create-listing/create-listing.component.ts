@@ -18,9 +18,6 @@ export class CreateListingComponent implements OnInit {
   constructor(private _samplerService: SamplerService, private _router: Router) { }
 
   ngOnInit() {
-    // $(document).ready(function() {
-    //   $('select').material_select();
-    // });
   }
 
   addListing(){

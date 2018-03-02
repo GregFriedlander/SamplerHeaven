@@ -65,6 +65,7 @@
                                         <p class="modelHeader">{{ sampler.model }} </p>
                                         <p class="brandHeader">{{ sampler.brand }}</p>                                       
                                         <p class="right-align priceHeader">${{ sampler.price }}</p>
+                                        <a *ngIf="sampler._user == currentUser._id" [routerLink]="['/edit', sampler._id]" >Edit Listing</a>
                                     </div>
                                 <!-- </div> -->
                             </div>   

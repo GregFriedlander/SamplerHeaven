@@ -40,20 +40,18 @@ form{
     margin-top: 27px;
     border-radius: 27px;
 }
+.form-row{
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
 .input-field label{
     color: black;
     font-size: 1.7rem;
     font-weight: bold;
 }
-/* .select-wrapper input.select-dropdown {
-    color: black !important;
-    font-size: 1.7rem !important;
-    font-weight: bold !important;
-} */
-.condition{
-    color: black;
-    font-size: 1.7rem;
-    font-weight: bold;
+.input-field .prefix{
+    margin-top: 13px;
+    font-size: 2.4rem;
 }
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
     border-bottom: 4px dotted black;
