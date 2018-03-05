@@ -108,6 +108,7 @@ i.medium{
     text-align: right;
     margin-right: 30px;
     font-size: 1.6rem;
+    margin-bottom: -9px;
 }
 .back-location{
     text-align: right;
@@ -115,7 +116,8 @@ i.medium{
     font-size: 1.1rem;
 }
 .back-condition{
-    margin-right: 46px;
+    text-align: right;
+    margin-right: 30px;
     font-weight: bold;
 }
 .back-details{
@@ -124,6 +126,20 @@ i.medium{
     font-weight: 400;
     font-style: italic;
     color: navajowhite;
+}
+.button {
+    display: inline-block;
+    width: 194px;
+    height: 61px;
+    background: black;
+    padding: 13px;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: navajowhite;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 15px;
 }
 /* !!!!!!!!!!!!! CARD REVEAL  END !!!!!!!!!!!!!!! */
 

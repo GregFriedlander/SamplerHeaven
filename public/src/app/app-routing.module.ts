@@ -9,6 +9,8 @@ import { RequestListComponent } from './request-list/request-list.component';
 import { EditListingComponent } from './edit-listing/edit-listing.component';
 import { EditRequestComponent } from './edit-request/edit-request.component';
 import { SamplerPageComponent } from './sampler-page/sampler-page.component';
+import { LandingComponent } from './landing/landing.component';
+
  
 const routes: Routes = [
   {

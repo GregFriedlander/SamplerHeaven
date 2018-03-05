@@ -8,6 +8,7 @@ var SamplerSchema = new mongoose.Schema({
     price: Number,
     details: String,
     image: String,
+    userEmail: String,  
     views: {type: Number, default: 0},
     _user: {type: Schema.Types.ObjectId, ref:'User'},
 }, {timestamps: true})

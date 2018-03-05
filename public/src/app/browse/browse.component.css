@@ -76,6 +76,9 @@ div.collapsible-body{
 .searchCat a:hover{
     cursor: pointer;
 }
+.searchCat li:hover{
+    cursor: pointer;
+}
 h3{
     margin-left: 6px;
     border-bottom: 2.3px dotted;

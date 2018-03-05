@@ -56,4 +56,13 @@ form{
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
     border-bottom: 4px dotted black;
     padding-top: 30px;
+    font-size: 1.5rem;
+}
+button{
+    margin-bottom: 29px;
+    background: black;
+    border-radius: 9px;
+    height: 50px;
+    font-size: 1.3rem;
+    color: ghostwhite;
 }

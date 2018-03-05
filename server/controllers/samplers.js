@@ -14,7 +14,7 @@ module.exports = {
                 res.send(err);
             }else{
                 console.log('The new sampler SAVED: ', newSampler);
-                res.send(true);
+                res.send(newSampler);
             }
         })
     },
@@ -27,6 +27,31 @@ module.exports = {
                 res.send(err);
             }else{
                 res.json(foundSamplers);
+            }
+        })
+    },
+    samplerbrands: function (req,res){
+        console.log('hit Sampler.samplerbrands');
+        Sampler.find({})
+        .exec(function(err,foundSamplers){
+            if(err){
+                console.log('something went wrong looking for Samplers');
+                res.send(err);
+            }else{
+                console.log('foundSamplers = ', foundSamplers);
+                var brandsArr = [];
+                console.log('Should be an empty array', brandsArr);
+                var brands = foundSamplers;
+                for (var x = 0; x < brands.length; x++){
+                    console.log('foundSamplers brands = ', x.brand);
+                    if(brandsArr.includes(brands[x].brand)){
+                        continue;
+                    }else{
+                        brandsArr.push(brands[x].brand);
+                        console.log('Brands Array:', brandsArr)
+                    }
+                }
+                res.json(brandsArr);
             }
         })
     },
@@ -56,6 +81,7 @@ module.exports = {
                 sampler.price = req.body.price;
                 sampler.details = req.body.details;
                 sampler.image = req.body.image;
+                sampler.userEmail = req.body.userEmail;
                 sampler.save(function(err){
                     if(err){
                         console.log('something went wrong');
@@ -80,4 +106,5 @@ module.exports = {
             }
         })
     }
+    
 }

@@ -28,9 +28,9 @@
 
                 <ul>
                     <li class="searchCat"><a (click)="toggleBrands()">Brands</a> 
-                        <ul [ngClass]="{'no-display' : switch }">
-                            <li class="brands category">Akai</li>
-                            <li class="brands category">Roland</li>
+                        <ul [ngClass]="{'no-display' : switch }" *ngFor="let brands of samplerBrands">
+                            <li class="brands category">{{brands}}</li>
+                            <!-- <li class="brands category">Roland</li> -->
                         </ul>
                     </li> 
                     <li class="searchCat"><a (click)="togglePrices()">Price</a>  

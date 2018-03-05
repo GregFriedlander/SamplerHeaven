@@ -46,5 +46,8 @@ export class SamplerService {
   updateRequest(requestID, requestObj){
     return this._http.post('/updaterequest/' + requestID, requestObj);
   }
+  getSamplerBrands(){
+    return this._http.get('/samplerbrands');
+  }
 
 }

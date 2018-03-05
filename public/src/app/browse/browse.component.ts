@@ -19,6 +19,8 @@ export class BrowseComponent implements OnInit {
   switch2: boolean = true;
   switch3: boolean = true;
 
+  samplerBrands: any = [];
+
   constructor(private _samplerService: SamplerService) { }
 
   ngOnInit() {
@@ -31,6 +33,12 @@ export class BrowseComponent implements OnInit {
         .subscribe((data:any)=>{  
           console.log('Got current user info: ', data);
           this.currentUser = data;
+          // ADDED FROM HERE DOWN 
+          this._samplerService.getSamplerBrands()
+          .subscribe((data:any)=>{
+            console.log('Got sampler brands: ', data);
+            this.samplerBrands = data;
+          })
         })
       })
   }

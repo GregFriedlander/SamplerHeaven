@@ -12,6 +12,7 @@ module.exports = function(app){
     app.get('/getsinglesampler/:id', Samplers.getsinglesampler);
     app.post('/updatesampler/:id', Samplers.update);
     app.post('/deletesampler/:id', Samplers.delete);
+    app.get('/samplerbrands', Samplers.samplerbrands);
     app.post('/addrequest', Requests.add);
     app.get('/allrequests', Requests.getall);
     app.post('/deleterequest/:id', Requests.delete);

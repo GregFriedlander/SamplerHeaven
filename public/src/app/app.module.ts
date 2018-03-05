@@ -56,6 +56,7 @@ import { EditRequestComponent } from './edit-request/edit-request.component';
 import { BrowseDialogComponent } from './browse-dialog/browse-dialog.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { SamplerPageComponent } from './sampler-page/sampler-page.component';
+import { LandingComponent } from './landing/landing.component';
 
 // @NgModule({
 //   exports: [
@@ -108,7 +109,8 @@ import { SamplerPageComponent } from './sampler-page/sampler-page.component';
     EditRequestComponent,
     BrowseDialogComponent,
     NavigationComponent,
-    SamplerPageComponent
+    SamplerPageComponent,
+    LandingComponent
   ],
   entryComponents:[BrowseDialogComponent],
   imports: [

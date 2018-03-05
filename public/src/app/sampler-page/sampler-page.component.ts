@@ -11,7 +11,7 @@ import { MaterializeModule } from 'angular2-materialize';
 export class SamplerPageComponent implements OnInit {
 
   sampler = {_id: ''};
-  thisSampler: any = {brand: '', model: '', condition: '', price: '', details: '', image: ''};
+  thisSampler: any = {brand: '', model: '', condition: '', price: '', details: '', image: '', userEmail: ''};
 
   constructor(private _samplerService: SamplerService, private _route: ActivatedRoute) { }
 
