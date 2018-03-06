@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SamplerService } from './../sampler.service';
+
 import { MaterializeModule } from 'angular2-materialize';
-import * as $ from 'jquery';
+// import * as $ from 'jquery';
 
 @Component({
   selector: 'app-navigation',
@@ -9,14 +11,17 @@ import * as $ from 'jquery';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  currentUser: any = {};
+  // ckals;kdja
+  constructor(private _samplerService: SamplerService) { }
+
+  
 
   ngOnInit() {
-    // $(document).ready(function(){
-    //   $(".button-collapse").sideNav();
-    //   $(".dropdown-button").dropdown();
-
-    // })
+    this._samplerService.getCurrentUser()
+        .subscribe((data:any)=>{  
+          console.log('Got current user info: ', data);
+          this.currentUser = data;
   }
 
 }

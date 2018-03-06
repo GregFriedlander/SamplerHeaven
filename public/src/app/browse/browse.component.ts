@@ -46,7 +46,7 @@ export class BrowseComponent implements OnInit {
   searchListings(searchTerm){
     this.shownSamplers = this.allSamplers.filter(function(listing){
       console.log('searching listings');
-      return listing.brand.toLowerCase().includes(searchTerm.toLowerCase()) || listing.model.toLowerCase().includes(searchTerm.toLowerCase());
+      return listing.brand.toLowerCase().includes(searchTerm.toLowerCase()) || listing.model.toLowerCase().includes(searchTerm.toLowerCase()) || listing.condition.toLowerCase().includes(searchTerm.toLowerCase());
     })
   }
 

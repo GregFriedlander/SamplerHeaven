@@ -36,7 +36,7 @@ module.exports = {
         .exec(function(err,foundSamplers){
             if(err){
                 console.log('something went wrong looking for Samplers');
-                res.send(err);
+                res.send(err);  
             }else{
                 console.log('foundSamplers = ', foundSamplers);
                 var brandsArr = [];

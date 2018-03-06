@@ -28,23 +28,24 @@
 
                 <ul>
                     <li class="searchCat"><a (click)="toggleBrands()">Brands</a> 
-                        <ul [ngClass]="{'no-display' : switch }" *ngFor="let brands of samplerBrands">
-                            <li class="brands category">{{brands}}</li>
+                        <ul [ngClass]="{'no-display' : switch }" *ngFor="let brands of samplerBrands | orderBy: order">
+                            <li (click)="searchListings( brands )" class="brands category">{{brands}}</li>
                             <!-- <li class="brands category">Roland</li> -->
                         </ul>
                     </li> 
                     <li class="searchCat"><a (click)="togglePrices()">Price</a>  
                         <ul [ngClass]="{'no-display' : switch2 }" class="no-display">
-                            <li class="category">0-100</li>
-                            <li class="category">101-500</li>
-                            <li class="category">501-1000</li>
+                            <li (click)="searchListings( 0 )" class="category">$0-$100</li>
+                            <li class="category">$101-$500</li>
+                            <li class="category">$501-$999</li>
+                            <li class="category">$1000 +</li>
                         </ul>
                     </li> 
                     <li class="searchCat"><a (click)="toggleCondition()">Condition</a>
                         <ul [ngClass]="{'no-display' : switch3 }" class="no-display">
-                            <li class="category">Working</li>
-                            <li class="category">Needs Love</li>
-                            <li class="category">Parts</li>
+                            <li (click)="searchListings( 'Needs Love' )" class="category">Needs Love</li>
+                            <li (click)="searchListings( 'Parts' )" class="category">Parts</li>
+                            <li (click)="searchListings( 'Working' )" class="category">Working</li>                            
                         </ul>
                     </li>
                 </ul>
@@ -65,7 +66,7 @@
                                         <p class="modelHeader">{{ sampler.model }} </p>
                                         <p class="brandHeader">{{ sampler.brand }}</p>                                       
                                         <p class="right-align priceHeader">${{ sampler.price }}</p>
-                                        <a *ngIf="sampler._user == currentUser._id" [routerLink]="['/edit', sampler._id]" >Edit Listing</a>
+                                        <a class="edit-btn" *ngIf="sampler._user == currentUser._id" [routerLink]="['/edit', sampler._id]" >Edit Listing</a>
                                     </div>
                                 <!-- </div> -->
                             </div>   
