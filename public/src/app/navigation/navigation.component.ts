@@ -22,6 +22,7 @@ export class NavigationComponent implements OnInit {
         .subscribe((data:any)=>{  
           console.log('Got current user info: ', data);
           this.currentUser = data;
-  }
-
+        }
+      
+    }      
 }

@@ -21,7 +21,6 @@
       "styles": [
         "styles.css",
         "../node_modules/materialize-css/dist/css/materialize.css"
-
       ],
       "scripts": ["../node_modules/jquery/dist/jquery.js",
                   "../node_modules/hammerjs/hammer.js",

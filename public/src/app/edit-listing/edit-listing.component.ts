@@ -46,6 +46,7 @@ export class EditListingComponent implements OnInit {
   }
 
   deleteSampler(samplerID){
+    console.log('Sampler ID =', samplerID);
     this._samplerService.deleteSampler(samplerID)
     .subscribe((data:any)=>{
       if(data.errors != undefined){
